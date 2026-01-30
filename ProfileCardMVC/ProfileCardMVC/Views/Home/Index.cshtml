@@ -1,0 +1,242 @@
+﻿@model IEnumerable<ProfileCardMVC.Models.User>
+
+@{
+    ViewData["Title"] = "Главная";
+}
+
+<style>
+    body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .main-container {
+        padding: 40px 20px;
+    }
+
+    .page-title {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .btn-create {
+        display: inline-block;
+        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        color: white;
+        padding: 14px 32px;
+        text-decoration: none;
+        border-radius: 50px;
+        margin-bottom: 40px;
+        font-weight: 600;
+        box-shadow: 0 4px 15px rgba(245, 87, 108, 0.4);
+        transition: all 0.3s ease;
+        border: none;
+    }
+
+    .btn-create:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(245, 87, 108, 0.6);
+        color: white;
+    }
+
+    .user-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 30px;
+        padding: 0 20px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .profile-card {
+        background: white;
+        border-radius: 20px;
+        padding: 0;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+        position: relative;
+    }
+
+    .profile-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    }
+
+    .card-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 30px 20px 80px 20px;
+        position: relative;
+    }
+
+    .profile-img-wrapper {
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 5px solid white;
+        object-fit: cover;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .no-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 5px solid white;
+        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 600;
+        font-size: 0.85rem;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .profile-info {
+        padding: 60px 25px 25px 25px;
+        text-align: center;
+    }
+
+    .profile-info h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #2d3748;
+        margin-bottom: 8px;
+    }
+
+    .short-bio {
+        color: #718096;
+        font-size: 0.95rem;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+
+    .info-item {
+        background: #f7fafc;
+        padding: 12px 15px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .info-item strong {
+        color: #667eea;
+        font-weight: 600;
+    }
+
+    .info-item span {
+        color: #4a5568;
+    }
+
+    .birthday-badge {
+        display: inline-block;
+        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        margin-top: 15px;
+        font-weight: 500;
+    }
+
+    .btn-details {
+        display: inline-block;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 10px 24px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-top: 15px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    }
+
+    .btn-details:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+        color: white;
+    }
+
+    .empty-state {
+        color: white;
+        font-size: 1.2rem;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    hr {
+        display: none;
+    }
+</style>
+
+<div class="main-container">
+    <div class="text-center">
+        <h1 class="page-title">✨ Список профилей</h1>
+        
+        <a asp-controller="Create" asp-action="Create" class="btn-create">
+            ➕ Создать новый профиль
+        </a>
+
+        <div class="user-container">
+            @if (Model.Any())
+            {
+                foreach (var user in Model)
+                {
+                    <div class="profile-card">
+                        <div class="card-header">
+                            <div class="profile-img-wrapper">
+                                @if (!string.IsNullOrEmpty(user.ImageUrl))
+                                {
+                                    <img src="@user.ImageUrl" alt="Аватар @user.Name" class="profile-img" />
+                                }
+                                else
+                                {
+                                    <div class="no-img">Нет фото</div>
+                                }
+                            </div>
+                        </div>
+
+                        <div class="profile-info">
+                            <h3>@user.Name</h3>
+                            <p class="short-bio">@user.ShortBio</p>
+                            
+                            <div class="info-item">
+                                <strong>Email:</strong> <span>@user.Email</span>
+                            </div>
+
+                            <div class="birthday-badge">
+                                @user.Birthday.ToShortDateString()
+                            </div>
+
+                            <div>
+                                <a asp-controller="Details" asp-action="Details" asp-route-id="@user.Id" class="btn-details">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="empty-state">
+                    <p>👤 Пользователей пока нет.<br />Нажми кнопку выше, чтобы добавить!</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+@model ProfileCardMVC.Models.Skill
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить навык</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 8px 24px rgba(0,0,0,0.1); width: 100%; max-width: 400px; }
+        h2 { color: #2d3748; margin-top: 0; text-align: center; }
+        label { display: block; margin-top: 15px; color: #4a5568; font-weight: 600; }
+        input { width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #e2e8f0; border-radius: 8px; box-sizing: border-box; }
+        .btn { width: 100%; background: #667eea; color: white; border: none; padding: 12px; border-radius: 8px; font-weight: 600; cursor: pointer; margin-top: 20px; transition: 0.3s; }
+        .btn:hover { background: #5a6fd6; }
+        .back-link { display: block; text-align: center; margin-top: 15px; color: #718096; text-decoration: none; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Новый навык</h2>
+    
+    <form asp-action="CreateSkills" method="post">
+        <input type="hidden" asp-for="UserId" />
+
+        <label asp-for="Name">Название</label>
+        <input asp-for="Name" placeholder="Например: ASP.NET Core" required />
+
+        <label asp-for="Description">Уровень или краткое описание</label>
+        <input asp-for="Description" placeholder="Например: Продвинутый" />
+
+        <button type="submit" class="btn">Добавить в профиль</button>
+        <a href="/Details/Details/@Model.UserId" class="back-link">← Отмена</a>
+    </form>
+</div>
+
+</body>
+</html>
