@@ -4715,11 +4715,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/e1yzz/RiderProjects/ProfileCardMVC/ProfileCardMVC/ProfileCardMVC.csproj",
+      "projectUniqueName": "/home/e1yzz/RiderProjects/ASPNET-HOMEWORKS/ProfileCardMVC/ProfileCardMVC/ProfileCardMVC.csproj",
       "projectName": "ProfileCardMVC",
-      "projectPath": "/home/e1yzz/RiderProjects/ProfileCardMVC/ProfileCardMVC/ProfileCardMVC.csproj",
+      "projectPath": "/home/e1yzz/RiderProjects/ASPNET-HOMEWORKS/ProfileCardMVC/ProfileCardMVC/ProfileCardMVC.csproj",
       "packagesPath": "/home/e1yzz/.nuget/packages/",
-      "outputPath": "/home/e1yzz/RiderProjects/ProfileCardMVC/ProfileCardMVC/obj/",
+      "outputPath": "/home/e1yzz/RiderProjects/ASPNET-HOMEWORKS/ProfileCardMVC/ProfileCardMVC/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/e1yzz/.nuget/NuGet/NuGet.Config"

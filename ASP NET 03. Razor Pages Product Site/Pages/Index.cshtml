@@ -1,0 +1,36 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Add Product";
+}
+
+<div class="text-center">
+    <h1>Add Product</h1>
+    <form asp-page = "/Products" method="post">
+        
+        <p>Name</p>
+        <p>
+            <input type="text" name="Name"/>
+        </p>
+        
+        <p>Description</p>
+        <p>
+            <input type="text" name="Description"/>
+        </p>
+        
+        <p>Count</p>
+        <p>
+            <input type="number" name="Count"/>
+        </p>
+
+        <p>Price</p>
+        <p>
+            <input type="text" name="Price"/>
+        </p>
+
+        <p>
+            <button type="submit">Add Product</button>
+        </p>
+
+    </form>
+</div>

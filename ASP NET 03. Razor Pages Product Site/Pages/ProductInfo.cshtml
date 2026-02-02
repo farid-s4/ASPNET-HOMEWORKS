@@ -1,0 +1,47 @@
+@page "{id:int}" 
+@model ProductInfo
+
+@if (Model.Product != null)
+{
+    <style>
+    .product-card {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 12px;
+        border: 2px solid #e0e0e0;
+        background: #ffffff;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        font-family: Arial, sans-serif;
+    }
+
+    .product-card h3 {
+        margin: 10px 0;
+        padding-bottom: 8px;
+        border-bottom: 1px dashed #ddd;
+        font-weight: 500;
+    }
+
+    .product-card h3:last-child {
+        border-bottom: none;
+    }
+
+    .product-card span {
+        color: #666;
+        font-weight: 600;
+    }
+</style>
+
+    <div class="product-card">
+        <h3><span>Name:</span> @Model.Product.Name</h3>
+        <h3><span>Description:</span> @Model.Product.Description</h3>
+        <h3><span>Count:</span> @Model.Product.Count</h3>
+        <h3><span>Is Available:</span> @Model.Product.IsAvailable</h3>
+        <h3><span>Price:</span> @Model.Product.Price $</h3>
+    </div>
+
+}
+else
+{
+    <h1>Product not found</h1>
+}

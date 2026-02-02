@@ -1,0 +1,101 @@
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/bin/Debug/net9.0/appsettings.Development.json
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/bin/Debug/net9.0/appsettings.json
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/bin/Debug/net9.0/ASP NET 03. Razor Pages Product Site.staticwebassets.runtime.json
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/bin/Debug/net9.0/ASP NET 03. Razor Pages Product Site.staticwebassets.endpoints.json
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/bin/Debug/net9.0/ASP NET 03. Razor Pages Product Site
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/bin/Debug/net9.0/ASP NET 03. Razor Pages Product Site.deps.json
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/bin/Debug/net9.0/ASP NET 03. Razor Pages Product Site.runtimeconfig.json
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/bin/Debug/net9.0/ASP NET 03. Razor Pages Product Site.dll
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/bin/Debug/net9.0/ASP NET 03. Razor Pages Product Site.pdb
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/bin/Debug/net9.0/Bogus.dll
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/ASP NET 03. Razor Pages Product Site.csproj.AssemblyReference.cache
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/rpswa.dswa.cache.json
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/ASP NET 03. Razor Pages Product Site.GeneratedMSBuildEditorConfig.editorconfig
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/ASP NET 03. Razor Pages Product Site.AssemblyInfoInputs.cache
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/ASP NET 03. Razor Pages Product Site.AssemblyInfo.cs
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/ASP NET 03. Razor Pages Product Site.csproj.CoreCompileInputs.cache
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/ASP NET 03. Razor Pages Product Site.MvcApplicationPartsAssemblyInfo.cache
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/ASP NET 03. Razor Pages Product Site.RazorAssemblyInfo.cache
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/ASP NET 03. Razor Pages Product Site.RazorAssemblyInfo.cs
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/ASP NET 03. Razor Pages Product Site.sourcelink.json
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/rjimswa.dswa.cache.json
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/rjsmrazor.dswa.cache.json
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/scopedcss/Pages/Shared/_Layout.cshtml.rz.scp.css
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/scopedcss/bundle/ASP NET 03. Razor Pages Product Site.styles.css
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/scopedcss/projectbundle/ASP NET 03. Razor Pages Product Site.bundle.scp.css
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/nryw08b3cx-{0}-lugek5hnai-lugek5hnai.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/ryihnrxcly-{0}-61n19gt1b8-61n19gt1b8.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/5jbzkhhn23-{0}-fr7q2aak1r-fr7q2aak1r.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/4jr6hroy9c-{0}-bqjiyaj88i-bqjiyaj88i.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/g6tj0jqawr-{0}-c2jlpeoesf-c2jlpeoesf.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/cl37rse2kf-{0}-erw9l3u2r3-erw9l3u2r3.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/13i7g5u74g-{0}-aexeepp0ev-aexeepp0ev.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/0yvwe8s2pf-{0}-d7shbmvgxk-d7shbmvgxk.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/ri2h7bn9p0-{0}-ausgxo2sd3-ausgxo2sd3.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/ejksiwr1gt-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/8ti7vw4xut-{0}-cosvhxvwiu-cosvhxvwiu.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/m6y7zzx3dg-{0}-ub07r2b239-ub07r2b239.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/0qxpt1q2fn-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/voj7fygtnv-{0}-b7pk76d08c-b7pk76d08c.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/l3b9x4u5pu-{0}-fsbi9cje9m-fsbi9cje9m.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/d4l2q19bp3-{0}-rzd6atqjts-rzd6atqjts.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/gvfihn4atu-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/xxvwms83nq-{0}-dxx9fxp4il-dxx9fxp4il.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/t944x1ubnj-{0}-jd9uben2k1-jd9uben2k1.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/e2ltx5vrrg-{0}-khv3u5hwcm-khv3u5hwcm.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/krnbn4dumx-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/c7rdyl8dby-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/uzrffuqszb-{0}-c2oey78nd0-c2oey78nd0.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/44r390545g-{0}-tdbxkamptv-tdbxkamptv.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/e8uexdja39-{0}-j5mq2jizvt-j5mq2jizvt.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/zae982xbm6-{0}-06098lyss8-06098lyss8.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/2ixhz8fhtc-{0}-nvvlpmu67g-nvvlpmu67g.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/yqbotj5f5i-{0}-s35ty4nyc5-s35ty4nyc5.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/5utjygp8ea-{0}-pj5nd1wqec-pj5nd1wqec.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/tae2vbxo9v-{0}-46ein0sx1k-46ein0sx1k.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/65h9bmcwri-{0}-v0zj4ognzu-v0zj4ognzu.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/btgwegtwz5-{0}-37tfw0ft22-37tfw0ft22.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/tgylqeaxtr-{0}-hrwsygsryq-hrwsygsryq.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/481jed7ujp-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/1f3d5bwvnn-{0}-ft3s53vfgj-ft3s53vfgj.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/wwrz8q119o-{0}-6cfz1n2cew-6cfz1n2cew.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/szos7pa7sq-{0}-6pdc2jztkx-6pdc2jztkx.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/av0z1llhxi-{0}-493y06b0oq-493y06b0oq.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/35kvlzkpba-{0}-iovd86k7lj-iovd86k7lj.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/bsw08ea841-{0}-vr1egmr9el-vr1egmr9el.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/7hrywl8kyv-{0}-kbrnm935zg-kbrnm935zg.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/pxdg0p8cdh-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/mapf38v71v-{0}-y7v9cxd14o-y7v9cxd14o.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/14geikgsxr-{0}-notf2xhcfb-notf2xhcfb.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/nqxh9eexe1-{0}-h1s4sie4z3-h1s4sie4z3.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/wik6o8l3ns-{0}-63fj8s7r0e-63fj8s7r0e.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/wowiw8cuk8-{0}-0j3bgjxly4-0j3bgjxly4.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/hrvoa8f414-{0}-47otxtyo56-47otxtyo56.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/c4s41ar5pl-{0}-4v8eqarkd7-4v8eqarkd7.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/ia4d0npxyy-{0}-l3n5xuwxn8-l3n5xuwxn8.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/ypq128cm0r-{0}-ilo7uva0vt-ilo7uva0vt.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/08dewjsf8j-{0}-qlccset4i1-qlccset4i1.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/b4j5z93f6g-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/v3xybj7e4p-{0}-ag7o75518u-ag7o75518u.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/29m3o3cq4k-{0}-xzw0cte36n-xzw0cte36n.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/vcoajhciws-{0}-0i3buxo5is-0i3buxo5is.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/jdbs0e6wk5-{0}-o1o13a6vjx-o1o13a6vjx.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/c5rascade2-{0}-ttgo8qnofa-ttgo8qnofa.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/ei6ed3uwqk-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/i6tjrwg3wt-{0}-muycvpuwrr-muycvpuwrr.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/6tdsjcvwd7-{0}-87fc7y1x7t-87fc7y1x7t.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/xniy47tmgn-{0}-jfsiqqwiad-jfsiqqwiad.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/qu3pi1ouhx-{0}-pdezeua5a9-pdezeua5a9.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/compressed/hyf00102hz-{0}-pdezeua5a9-pdezeua5a9.gz
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/staticwebassets.build.json
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/staticwebassets.build.json.cache
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/staticwebassets.development.json
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/swae.build.ex.cache
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/ASP NET .558184D6.Up2Date
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/ASP NET 03. Razor Pages Product Site.dll
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/refint/ASP NET 03. Razor Pages Product Site.dll
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/ASP NET 03. Razor Pages Product Site.pdb
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/ASP NET 03. Razor Pages Product Site.genruntimeconfig.cache
+/home/e1yzz/Downloads/ASP_NET_FSDA_Oct_24_2_ru/ASP NET 03. Razor Pages Product Site/obj/Debug/net9.0/ref/ASP NET 03. Razor Pages Product Site.dll
