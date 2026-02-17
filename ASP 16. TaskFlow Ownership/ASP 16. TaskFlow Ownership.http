@@ -1,0 +1,6 @@
+@ASP_16._TaskFlow_Ownership_HostAddress = http://localhost:5041
+
+GET {{ASP_16._TaskFlow_Ownership_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

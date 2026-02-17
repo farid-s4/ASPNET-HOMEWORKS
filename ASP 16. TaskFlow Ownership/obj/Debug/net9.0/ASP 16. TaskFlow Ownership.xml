@@ -1,0 +1,311 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ASP 16. TaskFlow Ownership</name>
+    </assembly>
+    <members>
+        <member name="M:ASP_16._TaskFlow_Ownership.Controllers.ProjectsController.GetAll">
+            <summary>
+            Retrieves all projects.
+            </summary>
+            <returns>List of all projects.</returns>
+            <response code="200">Returns the list of projects successfully.</response>
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Controllers.ProjectsController.GetById(System.Int32)">
+            <summary>
+            Retrieves a project by its specific identifier.
+            </summary>
+            <param name="id">Project identifier.</param>
+            <returns>The project with the specified ID.</returns>
+            <response code="200">Returns the project if found.</response>
+            <response code="404">If the project is not found.</response>
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Controllers.ProjectsController.Create(ASP_16._TaskFlow_Ownership.DTOs.CreateProjectDto)">
+            <summary>
+            Creates a new project.
+            </summary>
+            <param name="createProjectDto">Project data to create.</param>
+            <returns>The created project.</returns>
+            <response code="201">Returns the newly created project.</response>
+            <response code="400">If the model is invalid.</response>
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Controllers.ProjectsController.Update(System.Int32,ASP_16._TaskFlow_Ownership.DTOs.UpdateProjectDto)">
+            <summary>
+            Updates an existing project.
+            </summary>
+            <param name="id">Project identifier.</param>
+            <param name="updateProjectDto">Updated project data.</param>
+            <returns>The updated project.</returns>
+            <response code="200">Returns the updated project.</response>
+            <response code="400">If the model is invalid.</response>
+            <response code="404">If the project is not found.</response>
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Controllers.ProjectsController.Delete(System.Int32)">
+            <summary>
+            Deletes a project by its identifier.
+            </summary>
+            <param name="id">Project identifier.</param>
+            <returns>No content if deleted.</returns>
+            <response code="204">Project deleted successfully.</response>
+            <response code="404">If the project is not found.</response>
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Controllers.TaskItemsController.GetAll">
+            <summary>
+            Retrieves all task items.
+            </summary>
+            <returns>List of all task items.</returns>
+            <response code="200">Returns the list of task items.</response>
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Controllers.TaskItemsController.GetPaged(ASP_16._TaskFlow_Ownership.DTOs.TaskItem_DTOs.TaskItemQueryParams)">
+            <summary>
+            Retrieves a paged, sorted, and filtered list of task items based on query parameters.
+            </summary>
+            <param name="queryParams">
+            Query parameters for pagination, sorting, filtering, and searching task items.
+            </param>
+            <returns>Paged result containing task items matching the specified criteria.</returns>
+            <response code="200">Returns the paged list of task items.</response>
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Controllers.TaskItemsController.GetById(System.Int32)">
+            <summary>
+            Retrieves a task item by its identifier.
+            </summary>
+            <param name="id">Task item identifier.</param>
+            <returns>The task item with the specified ID.</returns>
+            <response code="200">Returns the task item if found.</response>
+            <response code="404">If the task item is not found.</response>
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Controllers.TaskItemsController.GetByProjectId(System.Int32)">
+            <summary>
+            Retrieves all task items for a specific project.
+            </summary>
+            <param name="projectId">Project identifier.</param>
+            <returns>List of task items for the specified project.</returns>
+            <response code="200">Returns the list of task items for the project.</response>
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Controllers.TaskItemsController.Create(ASP_16._TaskFlow_Ownership.DTOs.TaskItem_DTOs.CreateTaskItemDto)">
+            <summary>
+            Creates a new task item.
+            </summary>
+            <param name="createTask">Task item data to create.</param>
+            <returns>The created task item.</returns>
+            <response code="201">Returns the newly created task item.</response>
+            <response code="400">If the model is invalid or the request is incorrect.</response>
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Controllers.TaskItemsController.Update(System.Int32,ASP_16._TaskFlow_Ownership.DTOs.TaskItem_DTOs.UpdateTaskItemDto)">
+            <summary>
+            Updates an existing task item.
+            </summary>
+            <param name="id">Task item identifier.</param>
+            <param name="updateTask">Updated task item data.</param>
+            <returns>The updated task item.</returns>
+            <response code="200">Returns the updated task item.</response>
+            <response code="400">If the model is invalid.</response>
+            <response code="404">If the task item is not found.</response>
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Controllers.TaskItemsController.Delete(System.Int32)">
+            <summary>
+            Deletes a task item by its identifier.
+            </summary>
+            <param name="id">Task item identifier.</param>
+            <returns>No content if deleted.</returns>
+            <response code="200">Task item deleted successfully.</response>
+            <response code="404">If the task item is not found.</response>
+        </member>
+        <member name="P:ASP_16._TaskFlow_Ownership.DTOs.Auth_DTOs.LoginDto.Email">
+            <summary>
+            Email
+            </summary>
+            <example>john@doe.com</example>
+        </member>
+        <member name="P:ASP_16._TaskFlow_Ownership.DTOs.Auth_DTOs.LoginDto.Password">
+            <summary>
+            Password
+            </summary>
+            <example>P@ss1234</example>
+        </member>
+        <member name="P:ASP_16._TaskFlow_Ownership.DTOs.Auth_DTOs.RegisterDto.FirstName">
+            <summary>
+            User FirstName
+            </summary>
+            <example>John</example>
+        </member>
+        <member name="P:ASP_16._TaskFlow_Ownership.DTOs.Auth_DTOs.RegisterDto.LastName">
+            <summary>
+            User LastName
+            </summary>
+            <example>Doe</example>
+        </member>
+        <member name="P:ASP_16._TaskFlow_Ownership.DTOs.Auth_DTOs.RegisterDto.Email">
+            <summary>
+            Email
+            </summary>
+            <example>john@doe.com</example>
+        </member>
+        <member name="P:ASP_16._TaskFlow_Ownership.DTOs.Auth_DTOs.RegisterDto.Password">
+            <summary>
+            Password
+            </summary>
+            <example>P@ss1234</example>
+        </member>
+        <member name="P:ASP_16._TaskFlow_Ownership.DTOs.Auth_DTOs.RegisterDto.ConfirmPassword">
+            <summary>
+            Confirmed Password
+            </summary>
+            <example>P@ss1234</example>
+        </member>
+        <member name="T:ASP_16._TaskFlow_Ownership.DTOs.CreateProjectDto">
+            <summary>
+            DTO for create project. Uses for POST requestes
+            </summary>
+        </member>
+        <member name="P:ASP_16._TaskFlow_Ownership.DTOs.CreateProjectDto.Name">
+            <summary>
+            Project name
+            </summary>
+            <example>My new project</example>
+        </member>
+        <member name="P:ASP_16._TaskFlow_Ownership.DTOs.CreateProjectDto.Description">
+            <summary>
+            Project Description
+            </summary>
+            <example>Description for my project</example>
+        </member>
+        <member name="P:ASP_16._TaskFlow_Ownership.DTOs.TaskItem_DTOs.TaskItemQueryParams.Page">
+            <summary>
+            Page number for pagination (starts from 1).
+            </summary>
+        </member>
+        <member name="P:ASP_16._TaskFlow_Ownership.DTOs.TaskItem_DTOs.TaskItemQueryParams.PageSize">
+            <summary>
+            Number of items per page.
+            </summary>
+        </member>
+        <member name="P:ASP_16._TaskFlow_Ownership.DTOs.TaskItem_DTOs.TaskItemQueryParams.Sort">
+            <summary>
+            Field name used for sorting (e.g. CreatedAt, Priority, Title).
+            </summary>
+        </member>
+        <member name="P:ASP_16._TaskFlow_Ownership.DTOs.TaskItem_DTOs.TaskItemQueryParams.SortDirection">
+            <summary>
+            Sorting direction: asc or desc.
+            </summary>
+        </member>
+        <member name="P:ASP_16._TaskFlow_Ownership.DTOs.TaskItem_DTOs.TaskItemQueryParams.Status">
+            <summary>
+            Filter tasks by status (e.g. ToDo, InProgress, Done).
+            </summary>
+        </member>
+        <member name="P:ASP_16._TaskFlow_Ownership.DTOs.TaskItem_DTOs.TaskItemQueryParams.Priority">
+            <summary>
+            Filter tasks by priority (e.g. Low, Medium, High).
+            </summary>
+        </member>
+        <member name="P:ASP_16._TaskFlow_Ownership.DTOs.TaskItem_DTOs.TaskItemQueryParams.Search">
+            <summary>
+            Search text applied to task title and description.
+            </summary>
+        </member>
+        <member name="P:ASP_16._TaskFlow_Ownership.DTOs.TaskItem_DTOs.TaskItemQueryParams.ProjectId">
+            <summary>
+            Filter tasks by project identifier.
+            </summary>
+        </member>
+        <member name="T:ASP_16._TaskFlow_Ownership.Migrations.Initial">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:ASP_16._TaskFlow_Ownership.Migrations.AddPriority">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.AddPriority.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.AddPriority.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.AddPriority.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:ASP_16._TaskFlow_Ownership.Migrations.AddPriorityToTaskItem">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.AddPriorityToTaskItem.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.AddPriorityToTaskItem.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.AddPriorityToTaskItem.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:ASP_16._TaskFlow_Ownership.Migrations.AddApllicationUser">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.AddApllicationUser.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.AddApllicationUser.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.AddApllicationUser.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:ASP_16._TaskFlow_Ownership.Migrations.ChangeFirstNameAndLastNameToString">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.ChangeFirstNameAndLastNameToString.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.ChangeFirstNameAndLastNameToString.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.ChangeFirstNameAndLastNameToString.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:ASP_16._TaskFlow_Ownership.Migrations.AddRefreshToken">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.AddRefreshToken.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.AddRefreshToken.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.AddRefreshToken.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:ASP_16._TaskFlow_Ownership.Migrations.AddOwnerAndMemberships">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.AddOwnerAndMemberships.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.AddOwnerAndMemberships.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.AddOwnerAndMemberships.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:ASP_16._TaskFlow_Ownership.Migrations.Delete">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.Delete.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.Delete.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ASP_16._TaskFlow_Ownership.Migrations.Delete.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
