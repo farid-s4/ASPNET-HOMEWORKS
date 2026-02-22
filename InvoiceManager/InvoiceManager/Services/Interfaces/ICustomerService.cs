@@ -1,4 +1,6 @@
-﻿using InvoiceManager.DTO.CustomerDTOs;
+﻿using InvoiceManager.Common;
+using InvoiceManager.DTO.CustomerDTOs;
+using InvoiceManager.DTO.InvoiceDTOs;
 using InvoiceManager.Models;
 
 namespace InvoiceManager.Services.Interfaces
@@ -11,5 +13,6 @@ namespace InvoiceManager.Services.Interfaces
         Task<CustomerResponseDTO?> UpdateAsync(int id, CustomerUpdateDTO dto);
         Task<bool> SoftDeleteAsync(int id);
         Task<bool> HardDeleteAsync(int id);
+        Task<PagedResult<CustomerResponseDTO>> GetPagedAsync(CustomerQueryParams queryParams);
     }
 }

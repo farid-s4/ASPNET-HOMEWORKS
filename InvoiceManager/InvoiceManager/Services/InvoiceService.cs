@@ -1,9 +1,11 @@
 ﻿using AutoMapper;
+using InvoiceManager.Common;
 using InvoiceManager.Data;
 using InvoiceManager.DTO.InvoiceDTOs;
 using InvoiceManager.Mapping;
 using InvoiceManager.Models;
 using InvoiceManager.Services.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace InvoiceManager.Services
@@ -26,6 +28,48 @@ namespace InvoiceManager.Services
             return _mapper.Map<InvoiceResponseDTO>(invoice);
         }
 
+        public async Task<PagedResult<InvoiceResponseDTO>> GetPagedAsync(InvoicesQueryParams queryParams)
+        {
+            queryParams.Validate();
+            
+            var query = _context.Invoices
+                .Include(x => x.InvoiceRows)
+                .AsQueryable();
+
+            if (queryParams.CustomerId.HasValue)
+            {
+                query = query.Where(x => x.CustomerId == queryParams.CustomerId);
+            }
+
+            if (!string.IsNullOrEmpty(queryParams.SortByStatus))
+            {
+                if (Enum.TryParse<InvoiceStatus>(queryParams.SortByStatus, out InvoiceStatus status))
+                {
+                    query = query.Where(x => x.Status == status);
+                }
+            }
+
+            if (!string.IsNullOrWhiteSpace(queryParams.Search))
+            {
+                var search = queryParams.Search;
+                query = query.Where(x => x.Comment.ToLower().Contains(search) ||
+                                                 x.Comment.ToLower().Contains(search));
+            }
+            if (!string.IsNullOrWhiteSpace(queryParams.Sort))
+                query = ApplySorting(query, queryParams.Sort, queryParams.SortDirection!);
+            else
+                query = query.OrderByDescending(t => t.CreatedAt);
+            
+            var totalCount = await query.CountAsync();
+            var skip = (queryParams.PageNumber - 1) * queryParams.PageSize;
+            var invoices = await query.Skip(skip).Take(queryParams.PageSize).ToListAsync();
+            var invoicesDto = _mapper.Map<IEnumerable<InvoiceResponseDTO>>(invoices);
+            return PagedResult<InvoiceResponseDTO>.Create(
+                invoicesDto,
+                totalCount,
+                queryParams.PageNumber,
+                queryParams.PageSize);
+        }
         public async Task<IEnumerable<InvoiceResponseDTO>> GetAllAsync()
         {
             var invoices = await _context
@@ -110,6 +154,34 @@ namespace InvoiceManager.Services
             }
             await _context.SaveChangesAsync();
             return false;
+        }
+        private IQueryable<Invoice> ApplySorting(
+            IQueryable<Invoice> query,
+            string sortField,
+            string sortDirection)
+        {
+            var isDescending = sortDirection?.ToLower() == "desc";
+
+            return sortField.ToLower() switch
+            {
+                "title" => isDescending
+                    ? query.OrderByDescending(t=> t.Comment)
+                    : query.OrderBy(t => t.Comment),
+
+                "createdat" => isDescending
+                    ? query.OrderByDescending(t => t.CreatedAt)
+                    : query.OrderBy(t => t.CreatedAt),
+
+                "status" => isDescending
+                    ? query.OrderByDescending(t => t.Status)
+                    : query.OrderBy(t => t.Status),
+
+                "priority" => isDescending
+                    ? query.OrderByDescending(t => t.Status)
+                    : query.OrderBy(t => t.Status),
+                
+                _ => query.OrderByDescending(t => t.CreatedAt)
+            };
         }
     }
 }

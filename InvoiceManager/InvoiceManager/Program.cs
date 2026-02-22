@@ -2,6 +2,9 @@ using InvoiceManager.Data;
 using InvoiceManager.Mapping;
 using InvoiceManager.Services;
 using InvoiceManager.Services.Interfaces;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using InvoiceManager.Middlwares;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,6 +23,10 @@ builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IInvoiceService, InvoiceService>();
 
+builder.Services.AddValidatorsFromAssemblyContaining<Program>();
+
+builder.Services.AddFluentValidationAutoValidation();
+
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
@@ -31,6 +38,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
     app.MapOpenApi();
 }
+app.UseMiddleware<GlobalExceptionMiddleware>();
 
 app.UseHttpsRedirection();
 

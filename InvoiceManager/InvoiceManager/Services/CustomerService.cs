@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
+using InvoiceManager.Common;
 using InvoiceManager.Data;
 using InvoiceManager.DTO.CustomerDTOs;
-using InvoiceManager.DTO.InvoiceDTOs;
 using InvoiceManager.Models;
 using InvoiceManager.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -42,7 +42,7 @@ namespace InvoiceManager.Services
                 .Include(c => c.Invoices)
                 .FirstOrDefaultAsync(c => c.Id == id);
             if (customer == null)
-                {
+            {
                 return null;
             }
             return _mapper.Map<CustomerResponseDTO>(customer);
@@ -65,6 +65,68 @@ namespace InvoiceManager.Services
                 return true;
             }
             return false;
+        }
+
+        public async Task<PagedResult<CustomerResponseDTO>> GetPagedAsync(CustomerQueryParams queryParams)
+        {
+            queryParams.Validate();
+            
+            var query = _context.Customers
+                .Include(c => c.Invoices)
+                .AsQueryable();
+            if (queryParams.InvoiceId.HasValue)
+            {
+                query = query.Where(c => c.Id == queryParams.InvoiceId);
+            }
+            if (!string.IsNullOrWhiteSpace(queryParams.Search))
+            {
+                var searchTerm = queryParams.Search.ToLower();
+
+                query = query.Where(t => t.Phone != null && (t.Address != null && (t.Address.ToLower().Contains(searchTerm) ||
+                                                                 t.Email.ToLower().Contains(searchTerm)) 
+                                                             || t.Name.ToLower().Contains(searchTerm) || t.Phone.ToLower().Contains(searchTerm)));
+            }
+
+            if (!string.IsNullOrWhiteSpace(queryParams.Sort))
+                query = ApplySorting(query, queryParams.Sort, queryParams.SortDirection!);
+            else
+                query = query.OrderByDescending(t => t.CreatedAt);
+            
+            var totalCount = await query.CountAsync();
+            var skip = (queryParams.PageNumber - 1) * queryParams.PageSize;
+            var customers = await query.Skip(skip).Take(queryParams.PageSize).ToListAsync();
+            var customersDto = _mapper.Map<IEnumerable<CustomerResponseDTO>>(customers);
+            return PagedResult<CustomerResponseDTO>.Create(
+                customersDto,
+                totalCount,
+                queryParams.PageNumber,
+                queryParams.PageSize);
+        }
+
+        private IQueryable<Customer> ApplySorting(IQueryable<Customer> query, string queryParamsSort, string queryParamsSortDirection)
+        {
+            var isDescending = queryParamsSortDirection.ToLower() == "desc";
+
+            return queryParamsSort.ToLower() switch
+            {
+                "name" => isDescending
+                    ? query.OrderByDescending(t=> t.Name)
+                    : query.OrderBy(t => t.Name),
+
+                "createdat" => isDescending
+                    ? query.OrderByDescending(t => t.CreatedAt)
+                    : query.OrderBy(t => t.CreatedAt),
+
+                "email" => isDescending
+                    ? query.OrderByDescending(t => t.Email)
+                    : query.OrderBy(t => t.Email),
+
+                "address" => isDescending
+                    ? query.OrderByDescending(t => t.Address)
+                    : query.OrderBy(t => t.Address),
+
+                _ => query.OrderByDescending(t => t.CreatedAt)
+            };
         }
 
         public async Task<bool> SoftDeleteAsync(int id)

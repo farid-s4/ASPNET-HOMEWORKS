@@ -1,4 +1,5 @@
-﻿using InvoiceManager.DTO.InvoiceDTOs;
+﻿using InvoiceManager.Common;
+using InvoiceManager.DTO.InvoiceDTOs;
 using InvoiceManager.Models;
 
 namespace InvoiceManager.Services.Interfaces
@@ -7,6 +8,7 @@ namespace InvoiceManager.Services.Interfaces
     {
         Task<IEnumerable<InvoiceResponseDTO>> GetAllAsync();
         Task<InvoiceResponseDTO?> GetByIdAsync(int id);
+        Task<PagedResult<InvoiceResponseDTO>> GetPagedAsync(InvoicesQueryParams queryParams);
         Task<bool> UpdateStatusAsync(int id, InvoiceStatus newStatus);
         Task<InvoiceResponseDTO> CreateAsync(CreateInvoiceDTO dto);
         Task<InvoiceResponseDTO?> UpdateAsync(int id, InvoiceUpdateDTO dto); // Можно редактировать только не отправленные инвойсы 
