@@ -19,14 +19,4 @@
         public DateTimeOffset? DeletedAt { get; set; }
 
     }
-    public enum InvoiceStatus
-    {
-        Draft,
-        Created,
-        Sent,
-        Received,
-        Paid,
-        Cancelled,
-        Rejected
-    }
 }

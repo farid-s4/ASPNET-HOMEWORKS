@@ -4,11 +4,11 @@
     {
         public int Id { get; set; }
         public int InvoiceId { get; set; }
-        public Invoice Invoice { get; set; }
+        public Invoice Invoice { get; set; } = null!;
 
         public string Service { get; set; } = string.Empty; // Название выполненной работы
         public decimal Quantity { get; set; } // Количество единиц выполненной работы
         public decimal Rate { get; set; } // стоимость одной единицы 
-        public decimal Amount => Rate * Quantity; // Общая стоимость (Quantity * Rate)
+        public decimal Amount { get; set; }
     }
 }

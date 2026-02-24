@@ -7,34 +7,24 @@ using ValidationException = FluentValidation.ValidationException;
 
 namespace InvoiceManager.Middlwares;
 
-public class GlobalExceptionMiddleware
+public class GlobalExceptionMiddleware(RequestDelegate next, ILogger<GlobalExceptionMiddleware> logger)
 {
-    private readonly RequestDelegate _next;
-    private readonly ILogger<GlobalExceptionMiddleware> _logger;
-
-    public GlobalExceptionMiddleware(RequestDelegate next, ILogger<GlobalExceptionMiddleware> logger)
-    {
-        _next = next;
-        _logger = logger;
-    }
-
     public async Task InvokeAsync(HttpContext httpContext)
     {
         try
         {
-            await _next(httpContext);
+            await next(httpContext);
         }
         catch (Exception e)
         {
             await HandleException(httpContext, e);
             Console.WriteLine(e);
-            throw;
         }
     }
 
     private async Task HandleException(HttpContext httpContext, Exception exception)
     {
-        _logger.LogError(exception, exception.Message);
+        logger.LogError(exception, exception.Message);
         
         httpContext.Response.ContentType = "application/json";
         ProblemDetails problemDetails;

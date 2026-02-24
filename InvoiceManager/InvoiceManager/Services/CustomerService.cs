@@ -8,36 +8,28 @@ using Microsoft.EntityFrameworkCore;
 
 namespace InvoiceManager.Services
 {
-    public class CustomerService : ICustomerService
+    public class CustomerService(AppDbContext context, IMapper mapper) : ICustomerService
     {
-        private AppDbContext _context;
-        private IMapper _mapper;
-        public CustomerService(AppDbContext context, IMapper mapper)
-        {
-            _context = context;
-            _mapper = mapper;
-        }
-
         public async Task<CustomerResponseDTO> CreateAsync(CreateCustomerDTO dto)
         {
-            var customer = _mapper.Map<Customer>(dto);
-            _context.Customers.Add(customer);
-            await _context.SaveChangesAsync();
-            return _mapper.Map<CustomerResponseDTO>(customer);
+            var customer = mapper.Map<Customer>(dto);
+            context.Customers.Add(customer);
+            await context.SaveChangesAsync();
+            return mapper.Map<CustomerResponseDTO>(customer);
         }
 
         public async Task<IEnumerable<CustomerResponseDTO>> GetAllAsync()
         {
-            var customers = await _context
+            var customers = await context
                 .Customers
                 .Include(c => c.Invoices)
                 .ToListAsync();
-            return _mapper.Map<IEnumerable<CustomerResponseDTO>>(customers);
+            return mapper.Map<IEnumerable<CustomerResponseDTO>>(customers);
         }
 
         public async Task<CustomerResponseDTO?> GetByIdAsync(int id)
         {
-            var customer = await _context
+            var customer = await context
                 .Customers
                 .Include(c => c.Invoices)
                 .FirstOrDefaultAsync(c => c.Id == id);
@@ -45,12 +37,12 @@ namespace InvoiceManager.Services
             {
                 return null;
             }
-            return _mapper.Map<CustomerResponseDTO>(customer);
+            return mapper.Map<CustomerResponseDTO>(customer);
         }
 
         public async Task<bool> HardDeleteAsync(int id)
         {
-            var customer = _context
+            var customer = context
                 .Customers
                 .Include(c => c.Invoices)
                 .FirstOrDefault(c => c.Id == id);
@@ -60,8 +52,8 @@ namespace InvoiceManager.Services
             }
             if (!customer.Invoices.Any())
             {
-                _context.Customers.Remove(customer);
-                await _context.SaveChangesAsync();
+                context.Customers.Remove(customer);
+                await context.SaveChangesAsync();
                 return true;
             }
             return false;
@@ -71,7 +63,7 @@ namespace InvoiceManager.Services
         {
             queryParams.Validate();
             
-            var query = _context.Customers
+            var query = context.Customers
                 .Include(c => c.Invoices)
                 .AsQueryable();
             if (queryParams.InvoiceId.HasValue)
@@ -95,7 +87,7 @@ namespace InvoiceManager.Services
             var totalCount = await query.CountAsync();
             var skip = (queryParams.PageNumber - 1) * queryParams.PageSize;
             var customers = await query.Skip(skip).Take(queryParams.PageSize).ToListAsync();
-            var customersDto = _mapper.Map<IEnumerable<CustomerResponseDTO>>(customers);
+            var customersDto = mapper.Map<IEnumerable<CustomerResponseDTO>>(customers);
             return PagedResult<CustomerResponseDTO>.Create(
                 customersDto,
                 totalCount,
@@ -131,7 +123,7 @@ namespace InvoiceManager.Services
 
         public async Task<bool> SoftDeleteAsync(int id)
         {
-            var existingCustomer = await _context.Customers
+            var existingCustomer = await context.Customers
                 .FirstOrDefaultAsync(x => x.Id == id && x.DeletedAt == null);
             if (existingCustomer == null)
             {
@@ -140,16 +132,14 @@ namespace InvoiceManager.Services
 
             existingCustomer.DeletedAt = DateTimeOffset.UtcNow;
 
-            await _context.SaveChangesAsync();
+            await context.SaveChangesAsync();
 
             return true;
         }
 
         public async Task<CustomerResponseDTO?> UpdateAsync(int id, CustomerUpdateDTO dto)
         {
-            var customer = _mapper.Map<Customer>(dto);
-            
-            var existingCustomer = await _context
+            var existingCustomer = await context
        .Customers
        .FirstOrDefaultAsync(c => c.Id == id && c.DeletedAt == null);
 
@@ -158,11 +148,11 @@ namespace InvoiceManager.Services
                 return null;
             }
 
-            _mapper.Map(dto, existingCustomer);
+            mapper.Map(dto, existingCustomer);
 
-            await _context.SaveChangesAsync();
+            await context.SaveChangesAsync();
 
-            return _mapper.Map<CustomerResponseDTO>(customer);
+            return mapper.Map<CustomerResponseDTO>(existingCustomer);
         }
     }
 }
