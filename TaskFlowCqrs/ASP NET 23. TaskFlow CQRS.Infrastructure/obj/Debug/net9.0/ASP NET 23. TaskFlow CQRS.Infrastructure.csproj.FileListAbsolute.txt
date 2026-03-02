@@ -1,0 +1,20 @@
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Infrastructure\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Infrastructure.deps.json
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Infrastructure\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Infrastructure.runtimeconfig.json
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Infrastructure\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Infrastructure.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Infrastructure\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Infrastructure.pdb
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Infrastructure\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Application.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Infrastructure\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Domain.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Infrastructure\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Application.pdb
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Infrastructure\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Domain.pdb
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Infrastructure\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Infrastructure\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Infrastructure\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Infrastructure\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Infrastructure.AssemblyInfo.cs
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Infrastructure\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Infrastructure\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Infrastructure.sourcelink.json
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Infrastructure\obj\Debug\net9.0\ASP NET .DA393D0F.Up2Date
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Infrastructure\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Infrastructure.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Infrastructure\obj\Debug\net9.0\refint\ASP NET 23. TaskFlow CQRS.Infrastructure.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Infrastructure\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Infrastructure.pdb
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Infrastructure\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Infrastructure.genruntimeconfig.cache
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Infrastructure\obj\Debug\net9.0\ref\ASP NET 23. TaskFlow CQRS.Infrastructure.dll

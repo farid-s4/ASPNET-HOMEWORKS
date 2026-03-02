@@ -1,0 +1,12 @@
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Domain\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Domain.deps.json
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Domain\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Domain.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Domain\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Domain.pdb
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Domain\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Domain\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Domain.AssemblyInfoInputs.cache
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Domain\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Domain.AssemblyInfo.cs
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Domain\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Domain.csproj.CoreCompileInputs.cache
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Domain\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Domain.sourcelink.json
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Domain\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Domain.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Domain\obj\Debug\net9.0\refint\ASP NET 23. TaskFlow CQRS.Domain.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Domain\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Domain.pdb
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Domain\obj\Debug\net9.0\ref\ASP NET 23. TaskFlow CQRS.Domain.dll

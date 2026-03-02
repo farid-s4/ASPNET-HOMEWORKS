@@ -1,0 +1,91 @@
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\appsettings.json
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Api.staticwebassets.endpoints.json
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Api.exe
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Api.deps.json
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Api.runtimeconfig.json
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Api.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Api.pdb
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\AutoMapper.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Azure.Core.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Azure.Identity.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\FluentValidation.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\FluentValidation.AspNetCore.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\MediatR.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\MediatR.Contracts.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\System.ClientModel.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\System.Drawing.Common.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\System.Memory.Data.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\System.Runtime.Caching.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\System.Security.Permissions.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\System.Windows.Extensions.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Application.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Domain.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Infrastructure.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Application.pdb
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Infrastructure.pdb
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Domain.pdb
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Api.csproj.AssemblyReference.cache
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Api.AssemblyInfoInputs.cache
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Api.AssemblyInfo.cs
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Api.csproj.CoreCompileInputs.cache
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Api.sourcelink.json
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\scopedcss\bundle\ASP NET 23. TaskFlow CQRS.Api.styles.css
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\swae.build.ex.cache
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\ASP NET .2F43F0F4.Up2Date
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Api.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\refint\ASP NET 23. TaskFlow CQRS.Api.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Api.pdb
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Api.genruntimeconfig.cache
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Api\obj\Debug\net9.0\ref\ASP NET 23. TaskFlow CQRS.Api.dll

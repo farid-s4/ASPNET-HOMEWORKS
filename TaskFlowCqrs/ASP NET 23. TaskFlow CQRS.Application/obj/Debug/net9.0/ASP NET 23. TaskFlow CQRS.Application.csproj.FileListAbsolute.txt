@@ -1,0 +1,16 @@
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Application\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Application.deps.json
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Application\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Application.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Application\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Application.pdb
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Application\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Domain.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Application\bin\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Domain.pdb
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Application\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Application.csproj.AssemblyReference.cache
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Application\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Application\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Application.AssemblyInfoInputs.cache
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Application\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Application.AssemblyInfo.cs
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Application\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Application.csproj.CoreCompileInputs.cache
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Application\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Application.sourcelink.json
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Application\obj\Debug\net9.0\ASP NET .DC634DC8.Up2Date
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Application\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Application.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Application\obj\Debug\net9.0\refint\ASP NET 23. TaskFlow CQRS.Application.dll
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Application\obj\Debug\net9.0\ASP NET 23. TaskFlow CQRS.Application.pdb
+C:\Users\farid\Desktop\ASP_NET_FSDE_Oct_24_3_ru\ASP NET 23. TaskFlow CQRS.Application\obj\Debug\net9.0\ref\ASP NET 23. TaskFlow CQRS.Application.dll
