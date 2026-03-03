@@ -40,7 +40,8 @@ namespace InvoiceManager.Services
             queryParams.Validate();
             
             var query = context.Invoices
-                .Include(x => x.InvoiceRows)
+                .Where(i => !i.DeletedAt.HasValue)
+                .Include(i => i.InvoiceRows)
                 .AsQueryable();
 
             if (queryParams.CustomerId.HasValue)
@@ -78,9 +79,9 @@ namespace InvoiceManager.Services
         }
         public async Task<IEnumerable<InvoiceResponseDTO>> GetAllAsync()
         {
-            var invoices = await context
-                .Invoices
-                .Include(x => x.InvoiceRows)
+            var invoices = await context.Invoices
+                .Where(i => !i.DeletedAt.HasValue)
+                .Include(i => i.InvoiceRows)
                 .ToListAsync();
             return mapper.Map<IEnumerable<InvoiceResponseDTO>>(invoices);
         }
@@ -88,7 +89,8 @@ namespace InvoiceManager.Services
         public async Task<InvoiceResponseDTO?> GetByIdAsync(int id)
         {
             var invoice = await context.Invoices
-                .Include(x => x.InvoiceRows)
+                .Where(i => !i.DeletedAt.HasValue)
+                .Include(i => i.InvoiceRows)
                 .FirstOrDefaultAsync(x => x.Id == id);
             if (invoice == null)
             {
@@ -153,18 +155,16 @@ namespace InvoiceManager.Services
         {
             var existingInvoice = await context.Invoices
                 .FirstOrDefaultAsync(x => x.Id == id);
+
             if (existingInvoice == null)
-            {
                 return false;
-            }
+
             if (existingInvoice.Status != InvoiceStatus.Created)
-            {
-                context.Invoices.Remove(existingInvoice);
-                await context.SaveChangesAsync();
-                return true;
-            }
+                return false;
+
+            context.Invoices.Remove(existingInvoice);
             await context.SaveChangesAsync();
-            return false;
+            return true;
         }
         private IQueryable<Invoice> ApplySorting(
             IQueryable<Invoice> query,

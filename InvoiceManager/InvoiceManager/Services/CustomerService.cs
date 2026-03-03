@@ -20,8 +20,8 @@ namespace InvoiceManager.Services
 
         public async Task<IEnumerable<CustomerResponseDTO>> GetAllAsync()
         {
-            var customers = await context
-                .Customers
+            var customers = await context.Customers
+                .Where(c => !c.DeletedAt.HasValue)
                 .Include(c => c.Invoices)
                 .ToListAsync();
             return mapper.Map<IEnumerable<CustomerResponseDTO>>(customers);
@@ -29,8 +29,8 @@ namespace InvoiceManager.Services
 
         public async Task<CustomerResponseDTO?> GetByIdAsync(int id)
         {
-            var customer = await context
-                .Customers
+            var customer = await context.Customers
+                .Where(c => !c.DeletedAt.HasValue)
                 .Include(c => c.Invoices)
                 .FirstOrDefaultAsync(c => c.Id == id);
             if (customer == null)
@@ -64,6 +64,7 @@ namespace InvoiceManager.Services
             queryParams.Validate();
             
             var query = context.Customers
+                .Where(c => !c.DeletedAt.HasValue)
                 .Include(c => c.Invoices)
                 .AsQueryable();
             if (queryParams.InvoiceId.HasValue)
