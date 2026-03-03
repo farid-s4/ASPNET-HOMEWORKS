@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ejDDIvVILPM=",
+  "dgSpecHash": "Q8aaw69qloE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\farid\\Desktop\\TaskFlowCqrs\\ASP NET 23. TaskFlow CQRS.Api\\ASP NET 23. TaskFlow CQRS.Api.csproj",
+  "projectFilePath": "C:\\Users\\farid\\OneDrive\\Documents\\New folder\\ASPNET-HOMEWORKS\\TaskFlowCqrs\\ASP NET 23. TaskFlow CQRS.Api\\ASP NET 23. TaskFlow CQRS.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\farid\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\farid\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

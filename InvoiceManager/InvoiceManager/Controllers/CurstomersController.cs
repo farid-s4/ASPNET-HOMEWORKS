@@ -3,6 +3,7 @@ using InvoiceManager.DTO.CustomerDTOs;
 using InvoiceManager.DTO.InvoiceDTOs;
 using InvoiceManager.Models;
 using InvoiceManager.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,7 +19,7 @@ namespace InvoiceManager.Controllers
         {
             _customerService = customerService;
         }
-
+        [Authorize]
         [HttpGet]
         public async Task<ActionResult<ApiResponse<IEnumerable<CustomerResponseDTO>>>> GetAll()
         {
@@ -32,7 +33,7 @@ namespace InvoiceManager.Controllers
             return Ok(ApiResponse<PagedResult<CustomerResponseDTO>>.SuccessResult(resp, "Paged result found"));
         }
 
-
+        
         [HttpGet("{id}")]
         public async Task<ActionResult<ApiResponse<CustomerResponseDTO>>> GetById(int id)
         {

@@ -1,13 +1,16 @@
 ﻿using InvoiceManager.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace InvoiceManager.Data
 {
-    public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
+    public class AppDbContext : IdentityDbContext<ApplicationUser>
     {
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options){}
         public DbSet<Customer> Customers => Set<Customer>();
         public DbSet<Invoice> Invoices => Set<Invoice>();
         public DbSet<InvoiceRow> InvoiceRows => Set<InvoiceRow>();
+        public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -23,6 +26,11 @@ namespace InvoiceManager.Data
                 .WithOne(x => x.Invoice)
                 .HasForeignKey(x => x.InvoiceId);    
             
+            modelBuilder.Entity<ApplicationUser>()
+                .HasMany(u => u.Customers)
+                .WithOne(c => c.User)
+                .HasForeignKey(c => c.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

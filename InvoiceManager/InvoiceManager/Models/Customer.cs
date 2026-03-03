@@ -10,6 +10,9 @@
         public DateTimeOffset CreatedAt { get; set; } = DateTimeOffset.UtcNow;
         public DateTimeOffset? UpdatedAt { get; set; }
         public DateTimeOffset? DeletedAt { get; set; }
+        
+        public ApplicationUser? User { get; set; }
+        public string UserId { get; set; }
 
         public ICollection<Invoice> Invoices { get; set; } = new List<Invoice>();
     }
