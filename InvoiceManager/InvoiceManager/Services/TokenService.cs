@@ -4,7 +4,7 @@ using System.Security.Cryptography;
 using System.Text;
 using InvoiceManager.Config;
 using InvoiceManager.Data;
-using InvoiceManager.DTO.AuthDTOs;
+using InvoiceManager.DTO;
 using InvoiceManager.Models;
 using InvoiceManager.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;

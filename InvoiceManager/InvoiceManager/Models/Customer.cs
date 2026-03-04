@@ -11,8 +11,8 @@
         public DateTimeOffset? UpdatedAt { get; set; }
         public DateTimeOffset? DeletedAt { get; set; }
         
-        public ApplicationUser? User { get; set; }
-        public string UserId { get; set; }
+        public ApplicationUser? User { get; set; } = null;
+        public string? UserId { get; set; } = null;
 
         public ICollection<Invoice> Invoices { get; set; } = new List<Invoice>();
     }

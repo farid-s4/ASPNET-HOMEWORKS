@@ -1,10 +1,8 @@
-﻿using InvoiceManager.DTO.InvoiceDTOs;
-using InvoiceManager.Models;
+﻿using InvoiceManager.Models;
 using InvoiceManager.Services.Interfaces;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
 using InvoiceManager.Common;
+using InvoiceManager.DTO;
 
 namespace InvoiceManager.Controllers
 {

@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using InvoiceManager.DTO.CustomerDTOs;
+using InvoiceManager.DTO;
 
 namespace InvoiceManager.Validators;
 
@@ -8,8 +8,7 @@ public class CreateCustomerValidator : AbstractValidator<CreateCustomerDTO>
     public CreateCustomerValidator()
     {
         RuleFor(x => x.Name)
-            .NotEmpty().WithMessage("Name is required")
-            .Length(20).WithMessage("Name must have 20 characters");
+            .NotEmpty().WithMessage("Name is required");
         RuleFor(x => x.Email)
             .EmailAddress().NotEmpty().WithMessage("Email is required");
         RuleFor(x=>x.Phone)

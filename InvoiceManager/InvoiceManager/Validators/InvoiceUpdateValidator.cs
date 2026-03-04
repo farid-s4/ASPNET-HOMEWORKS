@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using InvoiceManager.DTO.InvoiceDTOs;
+using InvoiceManager.DTO;
 
 namespace InvoiceManager.Validators;
 

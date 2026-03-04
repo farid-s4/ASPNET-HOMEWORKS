@@ -1,4 +1,4 @@
-﻿using InvoiceManager.DTO.AuthDTOs;
+﻿using InvoiceManager.DTO;
 using InvoiceManager.Models;
 
 namespace InvoiceManager.Services.Interfaces;

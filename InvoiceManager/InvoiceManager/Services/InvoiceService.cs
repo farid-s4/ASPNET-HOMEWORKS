@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using InvoiceManager.Common;
 using InvoiceManager.Data;
-using InvoiceManager.DTO.InvoiceDTOs;
+using InvoiceManager.DTO;
 using InvoiceManager.Models;
 using InvoiceManager.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +12,13 @@ namespace InvoiceManager.Services
     {
         public async Task<InvoiceResponseDTO> CreateAsync(CreateInvoiceDTO dto)
         {
+            var customerExists = await context.Customers
+                .AnyAsync(c => c.Id == dto.CustomerId && c.DeletedAt == null);
+
+            if (!customerExists)
+            {
+                throw new KeyNotFoundException("Customer not found");
+            }
             var invoice = mapper.Map<Invoice>(dto);
             
             foreach (var row in invoice.InvoiceRows)
@@ -31,7 +38,7 @@ namespace InvoiceManager.Services
             var saved = await context.Invoices
                 .Include(i => i.InvoiceRows)
                 .FirstAsync(i => i.Id == invoice.Id);
-
+            
             return mapper.Map<InvoiceResponseDTO>(saved);
         }
 

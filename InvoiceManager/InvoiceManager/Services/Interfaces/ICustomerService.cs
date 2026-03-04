@@ -1,7 +1,5 @@
 ﻿using InvoiceManager.Common;
-using InvoiceManager.DTO.CustomerDTOs;
-using InvoiceManager.DTO.InvoiceDTOs;
-using InvoiceManager.Models;
+using InvoiceManager.DTO;
 
 namespace InvoiceManager.Services.Interfaces
 {

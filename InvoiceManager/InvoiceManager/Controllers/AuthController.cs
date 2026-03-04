@@ -1,6 +1,6 @@
 ﻿using System.Security.Claims;
 using InvoiceManager.Common;
-using InvoiceManager.DTO.AuthDTOs;
+using InvoiceManager.DTO;
 using InvoiceManager.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

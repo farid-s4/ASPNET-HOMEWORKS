@@ -1,35 +1,48 @@
 ﻿using AutoMapper;
 using InvoiceManager.Common;
 using InvoiceManager.Data;
-using InvoiceManager.DTO.CustomerDTOs;
+using InvoiceManager.DTO;
 using InvoiceManager.Models;
 using InvoiceManager.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace InvoiceManager.Services
 {
-    public class CustomerService(AppDbContext context, IMapper mapper) : ICustomerService
+    public class CustomerService : ICustomerService
     {
+        private readonly AppDbContext _context;
+        private readonly IMapper _mapper;
+        public CustomerService(AppDbContext context, IMapper mapper)
+        {
+            _context = context;
+            _mapper = mapper;
+        }
         public async Task<CustomerResponseDTO> CreateAsync(CreateCustomerDTO dto)
         {
-            var customer = mapper.Map<Customer>(dto);
-            context.Customers.Add(customer);
-            await context.SaveChangesAsync();
-            return mapper.Map<CustomerResponseDTO>(customer);
+            var emailExists = await _context.Customers
+                .AnyAsync(c => c.Email == dto.Email && c.DeletedAt == null);
+
+            if (emailExists)
+                throw new ArgumentException($"Client with email: {dto.Email} exists.");
+            
+            var customer = _mapper.Map<Customer>(dto);
+            _context.Customers.Add(customer);
+            await _context.SaveChangesAsync();
+            return _mapper.Map<CustomerResponseDTO>(customer);
         }
 
         public async Task<IEnumerable<CustomerResponseDTO>> GetAllAsync()
         {
-            var customers = await context.Customers
+            var customers = await _context.Customers
                 .Where(c => !c.DeletedAt.HasValue)
                 .Include(c => c.Invoices)
                 .ToListAsync();
-            return mapper.Map<IEnumerable<CustomerResponseDTO>>(customers);
+            return _mapper.Map<IEnumerable<CustomerResponseDTO>>(customers);
         }
 
         public async Task<CustomerResponseDTO?> GetByIdAsync(int id)
         {
-            var customer = await context.Customers
+            var customer = await _context.Customers
                 .Where(c => !c.DeletedAt.HasValue)
                 .Include(c => c.Invoices)
                 .FirstOrDefaultAsync(c => c.Id == id);
@@ -37,12 +50,12 @@ namespace InvoiceManager.Services
             {
                 return null;
             }
-            return mapper.Map<CustomerResponseDTO>(customer);
+            return _mapper.Map<CustomerResponseDTO>(customer);
         }
 
         public async Task<bool> HardDeleteAsync(int id)
         {
-            var customer = context
+            var customer = _context
                 .Customers
                 .Include(c => c.Invoices)
                 .FirstOrDefault(c => c.Id == id);
@@ -52,8 +65,8 @@ namespace InvoiceManager.Services
             }
             if (!customer.Invoices.Any())
             {
-                context.Customers.Remove(customer);
-                await context.SaveChangesAsync();
+                _context.Customers.Remove(customer);
+                await _context.SaveChangesAsync();
                 return true;
             }
             return false;
@@ -63,7 +76,7 @@ namespace InvoiceManager.Services
         {
             queryParams.Validate();
             
-            var query = context.Customers
+            var query = _context.Customers
                 .Where(c => !c.DeletedAt.HasValue)
                 .Include(c => c.Invoices)
                 .AsQueryable();
@@ -88,7 +101,7 @@ namespace InvoiceManager.Services
             var totalCount = await query.CountAsync();
             var skip = (queryParams.PageNumber - 1) * queryParams.PageSize;
             var customers = await query.Skip(skip).Take(queryParams.PageSize).ToListAsync();
-            var customersDto = mapper.Map<IEnumerable<CustomerResponseDTO>>(customers);
+            var customersDto = _mapper.Map<IEnumerable<CustomerResponseDTO>>(customers);
             return PagedResult<CustomerResponseDTO>.Create(
                 customersDto,
                 totalCount,
@@ -124,7 +137,7 @@ namespace InvoiceManager.Services
 
         public async Task<bool> SoftDeleteAsync(int id)
         {
-            var existingCustomer = await context.Customers
+            var existingCustomer = await _context.Customers
                 .FirstOrDefaultAsync(x => x.Id == id && x.DeletedAt == null);
             if (existingCustomer == null)
             {
@@ -133,14 +146,14 @@ namespace InvoiceManager.Services
 
             existingCustomer.DeletedAt = DateTimeOffset.UtcNow;
 
-            await context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
 
             return true;
         }
 
         public async Task<CustomerResponseDTO?> UpdateAsync(int id, CustomerUpdateDTO dto)
         {
-            var existingCustomer = await context
+            var existingCustomer = await _context
        .Customers
        .FirstOrDefaultAsync(c => c.Id == id && c.DeletedAt == null);
 
@@ -149,11 +162,11 @@ namespace InvoiceManager.Services
                 return null;
             }
 
-            mapper.Map(dto, existingCustomer);
+            _mapper.Map(dto, existingCustomer);
 
-            await context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
 
-            return mapper.Map<CustomerResponseDTO>(existingCustomer);
+            return _mapper.Map<CustomerResponseDTO>(existingCustomer);
         }
     }
 }

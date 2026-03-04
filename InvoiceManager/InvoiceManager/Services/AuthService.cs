@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using InvoiceManager.Data;
-using InvoiceManager.DTO.AuthDTOs;
+using InvoiceManager.DTO;
 using InvoiceManager.Models;
 using InvoiceManager.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
@@ -12,13 +12,11 @@ public class AuthService : IAuthService
 {
     private readonly UserManager<ApplicationUser> _userManager;
     private readonly ITokenService _tokenService;
-    private readonly AppDbContext _context;
 
-    public AuthService(UserManager<ApplicationUser> userManager, ITokenService tokenService, AppDbContext context)
+    public AuthService(UserManager<ApplicationUser> userManager, ITokenService tokenService)
     {
         _userManager = userManager;
         _tokenService = tokenService;
-        _context = context;
     }
     public async Task<AuthResponseDto> RegisterAsync(RegisterUserDto registerDto)
     {
