@@ -41,6 +41,17 @@ namespace InvoiceManager.Controllers
             return Ok(ApiResponse<InvoiceResponseDTO>.SuccessResult(invoice, "Invoice found"));
         }
 
+        [HttpGet("{id}/download")]
+        public async Task<ActionResult> Download(int id)
+        {
+            var resp = await _invoiceService.DownloadInvoice(id);
+            if (resp == null) 
+            {
+                return NotFound(ApiResponse<InvoiceResponseDTO>.FailureResult("Invoice not found"));
+            }
+            return File(resp.FileBytes, "application/pdf", resp.FileName);
+        }
+
         [HttpPost]
         public async Task<ActionResult<ApiResponse<InvoiceResponseDTO>>> Create([FromBody] CreateInvoiceDTO dto)
         {
@@ -95,5 +106,6 @@ namespace InvoiceManager.Controllers
 
             return Ok(ApiResponse<object>.SuccessResult(null, "Invoice permanently deleted"));
         }
+        
     }
 }

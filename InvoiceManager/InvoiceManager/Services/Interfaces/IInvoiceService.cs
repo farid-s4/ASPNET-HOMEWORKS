@@ -14,5 +14,6 @@ namespace InvoiceManager.Services.Interfaces
         Task<InvoiceResponseDTO?> UpdateAsync(int id, InvoiceUpdateDTO dto); // Можно редактировать только не отправленные инвойсы 
         Task<bool> SoftDeleteAsync(int id);
         Task<bool> HardDeleteAsync(int id);
+        Task<InvoiceFileDTO?> DownloadInvoice(int id);
     }
 }

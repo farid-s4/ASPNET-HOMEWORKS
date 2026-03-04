@@ -80,3 +80,8 @@ public class InvoiceUpdateDTO
     public string Comment { get; set; } = string.Empty;
     public ICollection<InvoiceRow> InvoiceRows { get; set; } = new List<InvoiceRow>();
 }
+public class InvoiceFileDTO
+{
+    public byte[] FileBytes { get; set; }
+    public string FileName { get; set; }
+}

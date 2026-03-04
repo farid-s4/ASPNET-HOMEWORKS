@@ -57,6 +57,10 @@
               "target": "Package",
               "version": "[12.0.0, )"
             },
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[3.4.1, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[12.1.1, )"
@@ -86,6 +90,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.13, )"
+            },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2026.2.2, )"
             },
             "Swashbuckle.AspNetCore.SwaggerGen": {
               "target": "Package",

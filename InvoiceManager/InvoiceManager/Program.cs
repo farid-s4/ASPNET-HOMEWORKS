@@ -1,5 +1,7 @@
 using InvoiceManager.Data;
 using InvoiceManager.Extensions;
+using QuestPDF.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddMySwagger()
@@ -8,6 +10,7 @@ builder.Services.AddMySwagger()
     .AddAutoMapperAndServices()
     .AddFluentValidation();
 
+QuestPDF.Settings.License = LicenseType.Community;
 var app = builder.Build();
 
 app.UsePipeline();
