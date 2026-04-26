@@ -1,0 +1,6 @@
+@AWS_Services_Test_FSDA_Oct_24_2_ru_HostAddress = http://localhost:5013
+
+GET {{AWS_Services_Test_FSDA_Oct_24_2_ru_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

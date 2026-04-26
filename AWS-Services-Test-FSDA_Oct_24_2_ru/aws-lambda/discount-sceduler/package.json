@@ -1,0 +1,17 @@
+{
+    "name": "discount-scheduler-lambda",
+    "version": "1.0.0",
+    "description": "AWS Lambda for scheduled product discount activation/deactivation",
+    "type": "module",
+    "main": "src/index.mjs",
+    "scripts": {
+        "test:local": "node src/index.mjs"
+    },
+    "engines": {
+        "node": ">=20"
+    },
+    "dependencies": {
+        "mssql":"^11.0.1"
+    }
+
+}
