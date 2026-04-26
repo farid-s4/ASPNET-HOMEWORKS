@@ -5,7 +5,7 @@ using MyApp.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-
+DotNetEnv.Env.Load();
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -29,23 +29,28 @@ builder.Services.AddCors(
         });
     }
     );
+builder.Configuration.AddEnvironmentVariables();
 
-builder.Services.AddSingleton<IAmazonS3>(
-    _ =>
+builder.Services.AddSingleton<IAmazonS3>(sp =>
+{
+    var awsSection = builder.Configuration.GetSection("AWS");
+    var settings = awsSection.Get<AWSSettings>();
+    
+    if (settings == null || string.IsNullOrEmpty(settings.Region))
     {
-        var awsSection = builder.Configuration.GetSection("AWS");
-        var settings = awsSection.Get<AWSSettings>();
-
-        var region = Amazon.RegionEndpoint.GetBySystemName(settings!.Region);
-        if (!string.IsNullOrWhiteSpace(settings.AccessKey) && !string.IsNullOrWhiteSpace(settings.SecretKey))
-        {
-            var credentials = new BasicAWSCredentials(settings.AccessKey, settings.SecretKey);
-            return new AmazonS3Client(credentials, region);
-        }
-        return new AmazonS3Client(region);
+        throw new Exception();
     }
 
-    );
+    var region = Amazon.RegionEndpoint.GetBySystemName(settings.Region);
+    
+    if (!string.IsNullOrWhiteSpace(settings.AccessKey) && !string.IsNullOrWhiteSpace(settings.SecretKey))
+    {
+        var credentials = new BasicAWSCredentials(settings.AccessKey, settings.SecretKey);
+        return new AmazonS3Client(credentials, region);
+    }
+    
+    return new AmazonS3Client(region);
+});
 
 builder.Services.AddScoped<IStorage, S3Service>();
 

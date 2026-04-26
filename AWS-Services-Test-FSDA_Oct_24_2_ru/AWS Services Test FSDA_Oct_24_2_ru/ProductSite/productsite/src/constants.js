@@ -1,1 +1,0 @@
-export  const PLACEHOLDER_IMAGE = 'https://placehold.co/400x240?text=No+Image'
