@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerComposeAPI", "DockerComposeAPI\DockerComposeAPI.csproj", "{ECF6D602-C869-4013-A76D-189E8EB539EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8434D2BB-76D0-4A45-9DAD-3D6F87294664}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECF6D602-C869-4013-A76D-189E8EB539EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECF6D602-C869-4013-A76D-189E8EB539EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECF6D602-C869-4013-A76D-189E8EB539EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECF6D602-C869-4013-A76D-189E8EB539EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
